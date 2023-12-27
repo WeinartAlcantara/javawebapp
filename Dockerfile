@@ -5,7 +5,7 @@ FROM openjdk:8-jdk-alpine
 WORKDIR /app
 
 # Copy the JAR file into the container at /app
-COPY *.jar /app/app.jar
+COPY target/hello-world-1.0-SNAPSHOT.jar /app/app.jar
 
 # Expose the application port
 EXPOSE 8080
